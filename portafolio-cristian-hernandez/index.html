@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cristian Hernández CV | Portafolio Personal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Barra de navegación superior (únicamente enlaces de texto simples, sin imágenes) -->
+  <header class="top-nav">
+    <div class="nav-container">
+      <nav aria-label="Navegación principal">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">HOME</a></li>
+          <li><a href="#about" class="nav-link">Acerca de Mi</a></li>
+          <li><a href="#skills" class="nav-link">Habilidades</a></li>
+          <li><a href="#services" class="nav-link">Servicio</a></li>
+          <li><a href="#contact" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenedor Principal (Estilo documento sobrio y minimalista) -->
+  <main class="page-container">
+
+    <!-- Encabezado / Hero -->
+    <section id="home" class="profile-header">
+      <div class="avatar-wrapper">
+        <img src="assets/img/mi_foto2.jpeg" alt="Foto de perfil de Cristian Miguel Hernández" class="avatar-img" onerror="this.style.display='none'; document.getElementById('avatar-fallback').style.display='flex';">
+        <div id="avatar-fallback" class="avatar-fallback" style="display: none;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </div>
+      </div>
+      <div class="profile-info">
+        <h1 class="profile-name">Cristian Miguel Hernández</h1>
+        <p class="profile-subtitle">Estudiante de Universidad Tecnológica de El Salvador</p>
+      </div>
+    </section>
+
+    <!-- Sección 1: Sobre mí -->
+    <section id="about" class="content-section">
+      <h2 class="section-title">SOBRE MÍ</h2>
+      <div class="section-content">
+        <p class="about-text">
+          Estudiante apasionado por la tecnología con formación en la Universidad Tecnológica de El Salvador. 
+          Enfocado en el soporte técnico y mantenimiento de equipos, con habilidades prácticas en ensamble 
+          de computadoras y manejo de herramientas ofimáticas para brindar soluciones técnicas eficientes.
+        </p>
+      </div>
+    </section>
+
+    <!-- Sección 2: Habilidades -->
+    <section id="skills" class="content-section">
+      <h2 class="section-title">HABILIDADES</h2>
+      <div class="skills-grid">
+        
+        <!-- Habilidad 1: Ensamble de computadoras -->
+        <article class="skill-card">
+          <div class="skill-icon-box">
+            <!-- Icono: Torre PC + Destornilladores -->
+            <svg class="skill-svg" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <!-- Torre PC -->
+              <rect x="14" y="12" width="26" height="48" rx="3" fill="#2d3748" stroke="#1a202c" stroke-width="2"/>
+              <line x1="20" y1="18" x2="34" y2="18" stroke="#718096" stroke-width="2" stroke-linecap="round"/>
+              <line x1="20" y1="24" x2="34" y2="24" stroke="#718096" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="27" cy="34" r="3" fill="#4a5568"/>
+              <circle cx="27" cy="48" r="5" fill="#319795" opacity="0.8"/>
+              <circle cx="27" cy="48" r="2.5" fill="#e6fffa"/>
+              <line x1="18" y1="55" x2="36" y2="55" stroke="#4a5568" stroke-width="1.5" stroke-linecap="round"/>
+              
+              <!-- Destornillador 1 (Rojo) -->
+              <rect x="47" y="14" width="4.5" height="15" rx="2" fill="#e53e3e" stroke="#c53030" stroke-width="1"/>
+              <rect x="48.5" y="29" width="1.5" height="26" fill="#cbd5e0" stroke="#718096" stroke-width="1"/>
+              <path d="M47.5 55L49.25 58L51 55H47.5Z" fill="#718096"/>
+              
+              <!-- Destornillador 2 (Rojo/Naranja) -->
+              <rect x="56" y="14" width="4.5" height="15" rx="2" fill="#dd6b20" stroke="#c05621" stroke-width="1"/>
+              <rect x="57.5" y="29" width="1.5" height="26" fill="#cbd5e0" stroke="#718096" stroke-width="1"/>
+              <path d="M56.5 55L58.25 58L60 55H56.5Z" fill="#718096"/>
+            </svg>
+          </div>
+          <h3 class="skill-name">Ensamble de computadoras</h3>
+        </article>
+
+        <!-- Habilidad 2: Manejo de Office 365 -->
+        <article class="skill-card">
+          <div class="skill-icon-box">
+            <!-- Icono: Nube con 365 -->
+            <svg class="skill-svg" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <!-- Nube Office azul -->
+              <path d="M23 48H52C58.0751 48 63 43.0751 63 37C63 31.2589 58.5996 26.5456 53.0135 26.0494C51.6881 18.0691 44.8016 12 36.5 12C28.919 12 22.4849 17.0655 20.4619 24.1287C14.5977 24.8105 10 29.8669 10 36C10 42.6274 15.3726 48 22 48" 
+                    fill="#ebf8ff" stroke="#3182ce" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <!-- Texto 365 -->
+              <text x="36.5" y="37" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="800" fill="#2b6cb0" text-anchor="middle" dominant-baseline="middle">365</text>
+            </svg>
+          </div>
+          <h3 class="skill-name">Manejo de Office 365</h3>
+        </article>
+
+        <!-- Habilidad 3: Bachillerato general -->
+        <article class="skill-card">
+          <div class="skill-icon-box">
+            <!-- Icono: Diploma enrollado con cinta -->
+            <svg class="skill-svg" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <!-- Pergamino inclinado -->
+              <g transform="rotate(-25 36 36)">
+                <!-- Rollo de diploma -->
+                <rect x="18" y="27" width="36" height="18" rx="4" fill="#fefcbf" stroke="#d69e2e" stroke-width="2"/>
+                <ellipse cx="18" cy="36" rx="4" ry="9" fill="#faf089" stroke="#d69e2e" stroke-width="2"/>
+                <ellipse cx="54" cy="36" rx="4" ry="9" fill="#fefcbf" stroke="#d69e2e" stroke-width="2"/>
+                <!-- Cinta roja -->
+                <rect x="33" y="26" width="6" height="20" fill="#e53e3e"/>
+                <!-- Medallón / Lazo -->
+                <circle cx="36" cy="47" r="4.5" fill="#e53e3e" stroke="#c53030" stroke-width="1.5"/>
+                <path d="M34 50L32 58L36 55L40 58L38 50Z" fill="#c53030"/>
+              </g>
+            </svg>
+          </div>
+          <h3 class="skill-name">Bachillerato general</h3>
+        </article>
+
+        <!-- Habilidad 4: Ensamble básico de motocicletas -->
+        <article class="skill-card">
+          <div class="skill-icon-box">
+            <!-- Icono: Motocicleta -->
+            <svg class="skill-svg" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <!-- Rueda delantera -->
+              <circle cx="53" cy="46" r="9" stroke="#2d3748" stroke-width="2.5" fill="#edf2f7"/>
+              <circle cx="53" cy="46" r="3.5" fill="#4a5568"/>
+              <!-- Rueda trasera -->
+              <circle cx="19" cy="46" r="9" stroke="#2d3748" stroke-width="2.5" fill="#edf2f7"/>
+              <circle cx="19" cy="46" r="3.5" fill="#4a5568"/>
+              <!-- Cuadro / Chasis -->
+              <path d="M19 46L31 46L38 37L48 37L53 46" stroke="#2d3748" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M31 46L36 29L47 29L51 23" stroke="#2d3748" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <!-- Manillar -->
+              <line x1="47" y1="21" x2="55" y2="21" stroke="#2d3748" stroke-width="3" stroke-linecap="round"/>
+              <!-- Asiento -->
+              <path d="M26 33C26 31 29 30 35 30H37" stroke="#e53e3e" stroke-width="3.5" stroke-linecap="round"/>
+              <!-- Tanque de combustible -->
+              <path d="M38 29C38 27 42 26 46 29C46 32 40 33 38 29Z" fill="#718096"/>
+              <!-- Motor -->
+              <rect x="30" y="38" width="8" height="8" rx="2" fill="#4a5568"/>
+            </svg>
+          </div>
+          <h3 class="skill-name">Ensamble básico de motocicletas</h3>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Sección 3: Servicios -->
+    <section id="services" class="content-section">
+      <h2 class="section-title">SERVICIOS</h2>
+      <div class="services-list">
+        
+        <!-- Servicio 1 -->
+        <article class="service-card">
+          <div class="service-icon-box">
+            <svg class="service-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <!-- Monitor -->
+              <rect x="8" y="10" width="48" height="34" rx="4" fill="#ffffff" stroke="#2d3748" stroke-width="2.5"/>
+              <!-- Base del monitor -->
+              <path d="M24 44L21 54H43L40 44" stroke="#2d3748" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <line x1="16" y1="54" x2="48" y2="54" stroke="#2d3748" stroke-width="2.5" stroke-linecap="round"/>
+              <!-- Llave inglesa técnica superpuesta -->
+              <g transform="translate(14, 12)">
+                <path d="M18 10L30 22C31.5 23.5 31.5 26 30 27.5L27.5 30C26 31.5 23.5 31.5 22 30L10 18" stroke="#3182ce" stroke-width="3" stroke-linecap="round"/>
+                <path d="M12 14L8 10C6.5 8.5 6.5 6 8 4.5C9.5 3 12 3 13.5 4.5L16 7L13 10L15 12L18 9L20.5 11.5C22 13 22 15.5 20.5 17L16.5 13" fill="#63b3ed" stroke="#3182ce" stroke-width="2"/>
+              </g>
+            </svg>
+          </div>
+          <div class="service-details">
+            <h3 class="service-title">Soporte técnico básico para computadoras</h3>
+            <p class="service-description">
+              Asistencia para resolver fallos comunes de software y hardware.
+            </p>
+          </div>
+        </article>
+
+        <!-- Servicio 2 -->
+        <article class="service-card">
+          <div class="service-icon-box">
+            <svg class="service-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <!-- Caja / CPU y engranajes de mantenimiento preventivo y correctivo -->
+              <rect x="10" y="14" width="44" height="36" rx="4" fill="#ffffff" stroke="#2d3748" stroke-width="2.5"/>
+              <line x1="10" y1="40" x2="54" y2="40" stroke="#cbd5e0" stroke-width="2"/>
+              <circle cx="32" cy="45" r="2" fill="#4a5568"/>
+              <!-- Engranaje / Mantenimiento -->
+              <circle cx="32" cy="27" r="7" stroke="#38a169" stroke-width="2.5" fill="#f0fff4"/>
+              <path d="M32 17V20M32 34V37M22 27H25M39 27H42M25 20L27 22M37 32L39 34M25 34L27 32M37 22L39 20" stroke="#38a169" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="32" cy="27" r="2.5" fill="#38a169"/>
+            </svg>
+          </div>
+          <div class="service-details">
+            <h3 class="service-title">Mantenimiento preventivo y correctivo de equipos de cómputo</h3>
+            <p class="service-description">
+              Diagnóstico, limpieza y reparación de hardware y software para optimizar el rendimiento y prolongar la vida útil de computadoras de escritorio y laptops.
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Sección 4: Contacto -->
+    <section id="contact" class="content-section">
+      <h2 class="section-title">CONTACTO</h2>
+      <div class="contact-layout">
+        
+        <!-- Columna Izquierda: Datos de contacto directo -->
+        <div class="contact-direct">
+          <a href="tel:76656630" class="contact-item" title="Llamar a Cristian Hernández">
+            <div class="contact-icon">
+              <!-- Icono Teléfono -->
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+              </svg>
+            </div>
+            <span class="contact-text">7665-6630</span>
+          </a>
+
+          <a href="mailto:cristianhernandez@gmail.com" class="contact-item" title="Enviar correo a Cristian Hernández">
+            <div class="contact-icon">
+              <!-- Icono Correo -->
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+              </svg>
+            </div>
+            <span class="contact-text">cristianhern4ndez@gmail.com</span>
+          </a>
+        </div>
+
+        <!-- Columna Derecha: Formulario de contacto -->
+        <div class="contact-form-container">
+          <form id="contact-form" class="contact-form" novalidate>
+            <div class="form-row-two-col">
+              <div class="form-group">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="Name" required autocomplete="name">
+                <span class="error-msg" id="name-error">Por favor ingresa tu nombre</span>
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="Email" required autocomplete="email">
+                <span class="error-msg" id="email-error">Ingresa un correo electrónico válido</span>
+              </div>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="message" class="form-label">Mensaje</label>
+              <textarea id="message" name="message" class="form-textarea" rows="4" placeholder="Message" required></textarea>
+              <span class="error-msg" id="message-error">Por favor escribe tu mensaje</span>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="submit-btn" id="submit-btn">
+                <span>ENVIAR</span>
+              </button>
+            </div>
+          </form>
+
+          <!-- Mensaje de éxito de envío -->
+          <div id="form-success" class="form-success" style="display: none;" role="alert">
+            <svg class="success-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+            <p><strong>¡Mensaje enviado con éxito!</strong> Gracias por comunicarte, te responderé a la brevedad.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer discreto -->
+  <footer class="page-footer">
+    <p>&copy; <span id="current-year"></span> Cristian Miguel Hernández &bull; Universidad Tecnológica de El Salvador</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
